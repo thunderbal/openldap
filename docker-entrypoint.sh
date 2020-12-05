@@ -4,7 +4,7 @@ set -e
 
 # if no ldap configuration then reconfigure slapdsl
 if [ ! -d "/etc/ldap/slapd.d" ]; then
-  echo "Configuring slapd...\n"
+  echo "Configuring slapd..."
   cat <<- EOF | debconf-set-selections
 slapd	slapd/no_configuration  boolean false
 slapd	slapd/domain            string ${SLAPD_DOMAIN:=example.com}
@@ -18,4 +18,4 @@ EOF
   dpkg-reconfigure -f noninteractive slapd
 fi
 
-slapd -d none -h "ldap:/// ldapi:///" -u openldap -g openldap
+exec slapd -d none -h "ldap:/// ldapi:///" -u openldap -g openldap
