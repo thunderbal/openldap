@@ -4,15 +4,15 @@
 
 # Supported tags and respective Dockerfile links
 
-* [latest](https://github.com/thunderbal/exim/blob/main/Dockerfile)
+* [latest](https://github.com/thunderbal/openldap/blob/master/Dockerfile)
 
 # Quick reference (cont.)
 
 * __Supported architectures:__ amd64
 
-# What is Exim?
+# What is Openldap?
 
-[Exim official site](http://exim.org/)
+[Openldap official site](http://openldap.org/)
 
 # How to use this image
 
@@ -72,5 +72,5 @@ Reconfiguration des dossiers, pour n'avoir qu'un seul volume à gérer (/usr/loc
 
 # License
 
-[GNU GENERAL PUBLIC LICENSE](https://github.com/thunderbal/exim/blob/main/LICENSE)
+[GNU GENERAL PUBLIC LICENSE](https://github.com/thunderbal/openldap/blob/master/LICENSE)
 
